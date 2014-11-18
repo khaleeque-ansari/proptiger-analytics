@@ -19,10 +19,19 @@ people   = db5.people
 
 #Assigning Values to the conversations
 talkValues = {}
-talkValues['Booking Related'] = 9
-talkValues['Payment Related'] = 8
-talkValues['Site Visit Related'] = 6
-talkValues['Property being discussed'] = 4
+##################################
+########## CODE REMOVED ##########
+####################################################################
+########## CODE REMOVED ##########
+####################################################################
+########## CODE REMOVED ##########
+####################################################################
+########## CODE REMOVED ##########
+####################################################################
+########## CODE REMOVED ##########
+####################################################################
+########## CODE REMOVED ##########
+##################################
 talkValues['No Relevant conversation'] = 2
 talkValues['Sorry Not able to classify'] = 1
 ##
@@ -36,6 +45,8 @@ with open('/home/sysadmin/user-analytics/app/static/event_value.txt') as f:
     evListBuyer[e]    = float(buyerVal)
     evListSearcher[e] = 10 - evListBuyer[e]
 ##    
+  
+
   
 #Reading buyers from a file
 with open('/home/sysadmin/user-analytics/app/static/buyers.txt') as f:
@@ -119,30 +130,13 @@ def search_results():
   regx_email = re.compile(email, re.IGNORECASE)
   regx_name  = re.compile(name, re.IGNORECASE)  
   regx_number= re.compile(number, re.IGNORECASE)
-  
-  if name == '':
-    if email == '':
-      if number =='':
-	document = people.find({'$and' :[{'Mobile':number}]}).limit(100)
-      else:
-	document = people.find({'$and' :[{'Mobile':regx_number}]}).limit(100)
-    else:
-      if number =='':
-	document = people.find({'$and' :[{'email':regx_email}]}).limit(100)
-      else:
-	document = people.find({'$and' :[{'email':regx_email},{'Mobile':regx_number}]}).limit(100)
-  else:
-    if email == '':
-      if number =='':
-	document = people.find({'$and' :[{'name':regx_name}]}).limit(100)
-      else:
-	document = people.find({'$and' :[{'name':regx_name},{'Mobile':regx_number}]}).limit(100)
-    else:
-      if number =='':
-	document = people.find({'$and' :[{'name':regx_name},{'email':regx_email}]}).limit(100)
-      else:
-	document = people.find({'$and' :[{'name':regx_name},{'email':regx_email},{'Mobile':regx_number}]}).limit(100)
-  results = []
+  ##################################
+########## CODE REMOVED ##########
+####################################################################
+########## CODE REMOVED ##########
+####################################################################
+########## CODE REMOVED ##########
+##################################
     
   for doc in document:
     results.append(doc)
@@ -176,39 +170,17 @@ def user_activity(id=None):
       pers_info['name']	 = info['name']
       pers_info['Mobile']= info['Mobile']
       pers_info['email'] = info['email']
-      status_code 	 = info['status']
-      
-      if status_code == 2:
-	pers_info['status'] = 'New'
-      elif status_code == 3 :
-	pers_info['status'] = 'In Process'
-      elif status_code == 4:
-	pers_info['status'] = 'Contact'
-      elif status_code == 7:
-	  pers_info['status'] = 'Dead'
-      elif status_code == 8:
-	  pers_info['status'] = 'Closed Lost'
-      elif status_code == 9:
-	pers_info['status'] = 'Closed Won'
-      elif status_code == 11:
-	pers_info['status'] = 'Follow Up'
-      elif status_code == 12:
-	pers_info['status'] = 'Meeting Scheduled'
-      elif status_code == 13:
-	pers_info['status'] = 'Meeting Done'
-      elif status_code == 14:
-	pers_info['status'] = 'Site Visit Scheduled'
-      elif status_code == 15:
-	pers_info['status'] = 'Unit Blocked'
-      elif status_code == 16:
-	pers_info['status'] = 'Cheque Collected'
-      elif status_code == 17:
-	pers_info['status'] = 'Site Visit Done'
-      elif status_code == 18:
-	pers_info['status'] = 'Meeting'
-      elif status_code == 19:
-	pers_info['status'] = 'File Picked Up'
-      elif status_code == 20:
+      ##################################
+########## CODE REMOVED ##########
+####################################################################
+########## CODE REMOVED ##########
+####################################################################
+########## CODE REMOVED ##########
+####################################################################
+########## CODE REMOVED ##########
+####################################################################
+########## CODE REMOVED ##########
+##################################
 	pers_info['status'] = 'Case Logged In'
       elif status_code == 21:
 	pers_info['status'] = 'Bank Processing'
@@ -244,13 +216,21 @@ def user_activity(id=None):
 	  vListSearcher.append(evListSearcher[e_name])
 	  e_time = (temp.year,temp.month,temp.day,temp.hour,temp.minute,temp.second)
 	  e_list += [{'e_name':e_name,'e_time': e_time, 'type':1}]      
-	else:  	
-	  conv_list.append(event['description'])	  	    
-	  e_name = str(event['description'])
-	  e_name = ''.join(e for e in e_name if (e.isalnum()or e == ' ' or e =='.' or e == ',') )
-	  temp = event['posted_date']               
-	  e_time = (temp.year,temp.month,temp.day,temp.hour,temp.minute,temp.second)
-	  e_list += [{'e_name':e_name,'e_time': e_time, 'type':0}] 
+##################################
+########## CODE REMOVED ##########
+####################################################################
+########## CODE REMOVED ##########
+####################################################################
+########## CODE REMOVED ##########
+####################################################################
+########## CODE REMOVED ##########
+####################################################################
+########## CODE REMOVED ##########
+####################################################################
+########## CODE REMOVED ##########
+####################################################################
+########## CODE REMOVED ##########
+##################################
 	  
     else :
       return "not found" 
@@ -300,19 +280,21 @@ def user_activity(id=None):
     report = {}
   
     t = e_list[-1]['e_time']   
-    t1 = datetime.datetime(t[0],t[1],t[2],t[3],t[4],t[5])
-    t = e_list[0]['e_time'] 
-    t2 = datetime.datetime(t[0],t[1],t[2],t[3],t[4],t[5])  
-
-    seconds = (t1-t2).seconds
-    minutes = seconds/60
-    hours = minutes/60
-    days = hours/24
-    report['seconds'] = seconds
-    report['minutes'] = minutes
-    report['hours'] = hours + 1
-    report['days'] = (t1-t2).days
-    online_mean_score = statistics.mean(vListBuyer)
+    ##################################
+########## CODE REMOVED ##########
+####################################################################
+########## CODE REMOVED ##########
+####################################################################
+########## CODE REMOVED ##########
+####################################################################
+########## CODE REMOVED ##########
+####################################################################
+########## CODE REMOVED ##########
+####################################################################
+########## CODE REMOVED ##########
+####################################################################
+########## CODE REMOVED ##########
+##################################
     
     
     report['mean'] =  buyer_score + online_mean_score*(10.0-buyer_score)/10.0
@@ -355,13 +337,19 @@ def detailed_analysis(id=None):
   buyer_score = 0
   analysis_list = [x[1] for x in conv_analysis_list]
   if 'Booking Related'  in analysis_list:
-    buyer_score = 9
-  elif 'Payment Related' in analysis_list:
-    buyer_score = 8
-  elif 'Site Visit Related' in analysis_list:
-    buyer_score = 6
-  elif 'Property being discussed' in analysis_list:
-    buyer_score = 4
+    ##################################
+########## CODE REMOVED ##########
+####################################################################
+########## CODE REMOVED ##########
+####################################################################
+########## CODE REMOVED ##########
+####################################################################
+########## CODE REMOVED ##########
+####################################################################
+########## CODE REMOVED ##########
+####################################################################
+########## CODE REMOVED ##########
+##################################
   elif 'No Relevant conversation' in analysis_list:
     buyer_score = 2
   else:
