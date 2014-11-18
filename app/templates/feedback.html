@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block scripts %}
+{% endblock %}
+
+
+<!--Feedback Section-->
+{% block timeline %}
+
+<center><h3><i>If you have any Feedback, Suggestion or Request for additional feature  please shoot a mail at <u>khaleeque.ansari@proptiger.com</u></i></h3></center>
+
+<center><form action="MAILTO:khaleeque.ansari@proptiger.com?Subject=Suggestions,%20Feedback%20or%20Additional%20feature%20request" method="post" enctype="text/plain" align:"center">
+Name: <input type="text" name="name" placeholder="your name" size="50"><br>
+E-mail: <input type="text" name="mail" placeholder="your email" size="50"><br>
+<b>Comment(*required):</b><input type="text" name="comment" placeholder="your comment" size="50"><br><br>
+
+
+<input type="submit" value="Send">
+<input type="reset" value="Reset">
+</form></center>
+
+{% endblock %}
+
+
+{% block content %}
+{% endblock %}
+

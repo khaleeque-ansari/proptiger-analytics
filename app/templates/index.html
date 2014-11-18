@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block scripts %}
+{% endblock %}
+
+{% block timeline %}
+
+<br>
+<br>
+<br>
+<center><h3><i>Search using Name, Email or Mobile Number</i></h3></center>
+<center><form name="input" action="search_results" method="get">
+<input type="text" name="name"   placeholder="Name" >
+<input type="text" name="email"  placeholder="Email">
+<input type="text" name="number" placeholder="Mobile Number"> 
+<input type="submit" value="Search by Name, Email or Mobile Number" >
+</form></center>
+
+<center><h3><i>OR search directly using User ID</i></h3></center>
+<center><form name="input" action="user" method="get">
+<input type="text" size="97" name="distinct_id"   placeholder="Distinct ID of the user (e.g. 1472560e38f3fb-0848d2066-31720559-100200-1472560e390958)" >
+<input type="submit" value="Search by User ID" >
+</form></center>
+
+<br>
+<br>
+<br>
+{% endblock %}
+
+
+{% block content %}
+<center><table style="width:700px">
+  <tr>
+    <td><h2><a href='/registered_users'>All Registered Users</a></h2></td>
+    <td><h2>| &nbsp</h2></td>
+    <td><h2><a href='/registered_users/buyers'>Buyers</a></h2></td>
+    <td><h2>| &nbsp</h2></td>
+    <td><h2><a href='/evm'>Event Value Mappings </a></h2></td>
+    <td><h2>| &nbsp</h2></td>
+    <td><h2><a href='/about'>About</a></h2></td>
+  </tr>
+</table></center>  
+{% endblock %}

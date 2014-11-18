@@ -1,0 +1,28 @@
+<html>
+
+  <head>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <title> Analytics</title>
+    <style type="text/css">
+      h5 {text-align:right}
+    </style>
+    
+    {% block styles %}{% endblock %}
+    {% block scripts %}{% endblock %}
+    
+  </head>
+  
+  
+  <body>
+      
+      <div>	
+	<h1><center><u><a href="/">User Analytics</a></u></center></h1>
+        <h5><font color="red"><i><a href="/feedback">Suggestions, Feedback & Additional feature request</a></i></font><h5> 
+      </div>
+      
+      <center><table style="width:600px"><tr><td><hr></td></tr></table></center>
+      {% block timeline %}{% endblock %}
+      <center><table style="width:500px"><tr><td><hr></td></tr></table></center>
+      {% block content  %}{% endblock %}
+      </body>
+</html>

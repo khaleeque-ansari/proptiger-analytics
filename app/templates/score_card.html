@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block scripts %}
+{% endblock %}
+
+{% block timeline %}
+
+</table></center>
+
+<center><table style="width:600px">
+<tr><h3>Buyer Sore Card</h3></tr>
+<tr><th>Buyer Score </th><th>Analysis</th>
+<tr><td><hr></td><td><hr></td>
+<tr>
+  <td><center><i>&rsaquo; 9 </i></center></td>
+  <td><center><i> Done buying property </i></center></td>
+</tr>
+<tr><td><hr></td><td><hr></td></tr>
+<tr>
+  <td><center><i> 8-9 </i></center></td>
+  <td><center><i> At Later Stages / Payment in Process </i></center></td>
+</tr>
+<tr><td><hr></td><td><hr></td></tr>
+<tr>
+  <td><center><i> 6-8 </i></center></td>
+  <td><center><i> Site Visit done or to be done </i></center></td>
+</tr>
+<tr><td><hr></td><td><hr></td></tr>
+<tr>
+  <td><center><i> 4-6 </i></center></td>
+  <td><center><i> At Later Stages / Payment in Process </i></center></td>
+</tr>
+<tr><td><hr></td><td><hr></td></tr>
+<tr>
+  <td><center><i> 2-4 </i></center></td>
+  <td><center><i> Willing to buy / Delaying / Not able to contact </i></center></td>
+</tr>
+<tr><td><hr></td><td><hr></td></tr>
+<tr>
+  <td><center><i> &lsaquo; 2 </i></center></td>
+  <td><center><i> Quite Unsure / Random </i></center></td>
+</tr>
+
+</table></center>
+
+<br>
+<br>
+<br>
+{% endblock %}
+
+
+{% block content %}
+<center><table style="width:700px">
+  <tr>
+    <td><h2><a href='/registered_users'>All Registered Users</a></h2></td>
+    <td><h2>| &nbsp</h2></td>
+    <td><h2><a href='/registered_users/buyers'>Buyers</a></h2></td>
+    <td><h2>| &nbsp</h2></td>
+    <td><h2><a href='/evm'>Event Value Mappings </a></h2></td>
+    <td><h2>| &nbsp</h2></td>
+    <td><h2><a href='/about'>About</a></h2></td>
+  </tr>
+</table></center>  
+{% endblock %}

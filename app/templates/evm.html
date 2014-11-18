@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block scripts %}
+{% endblock %}
+
+{% block timeline %}
+
+<center><table style="width:600px">
+
+<tr><h3>Online Events</h3></tr>
+<tr>
+  <th>Event</th>
+  <th>Buyer Score</th>
+  <th>Searcher Score<sup></th>
+</tr>
+
+{% for evm in evmList %}
+<tr>
+  <td><hr></td>
+  <td><hr></td>
+  <td><hr></td>  
+</tr>
+<tr>
+  <td><i>{{evm[0]}}</i></td>
+  <td><i>{{evm[1]}}</i></td>		
+  <td><i>{{evm[2]}}</i></td>  
+</tr></i>
+
+{% endfor %}
+
+
+
+</table></center>
+
+<center><table style="width:600px">
+<tr><h3>Offline Events</h3></tr>
+<tr><th>Event</th><th>Buyer Score</th><th>Searcher Score</th></tr>
+<tr><td><hr></td><td><hr></td><td><hr></td></tr>
+<tr><td><i>Booking Related</i></td><td><i>9.0</i></td><td><i>1.0</i></td></tr>
+<tr><td><hr></td><td><hr></td><td><hr></td></tr>
+<tr><td><i>Payment Related</i></td><td><i>8.0</i></td><td><i>2.0</i></td></tr>
+<tr><td><hr></td><td><hr></td><td><hr></td></tr>
+<tr><td><i>Site Visit Related</i></td><td><i>6.0</i></td><td><i>4.0</i></td></tr>
+<tr><td><hr></td><td><hr></td><td><hr></td></tr>
+<tr><td><i>Property being discussed</i></td><td><i>4.0</i></td><td><i>6.0</i></td></tr>
+<tr><td><hr></td><td><hr></td><td><hr></td></tr>
+<tr><td><i>No Relevant conversation </i></td><td><i>2.0</i></td><td><i>8.0</i></td></tr>
+<tr><td><hr></td><td><hr></td><td><hr></td></tr>
+<tr><td><i>Anything Else </i></td><td><i>1.0</i></td><td><i>9.0</i></td></tr>
+
+</table></center>
+{% endblock %}
+
+{% block content %}
+{% endblock %}
+

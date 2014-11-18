@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block scripts %}
+{% endblock %}
+
+{% block timeline %}
+<center><table>
+  {% for i in range(rows) %}
+    <tr>
+      <td><ul><li><a href="\user\{{buyers[3*i+0]}}">{{buyer_names[3*i+0]}}</a></li></ul></td>
+      <td><ul><li><a href="\user\{{buyers[3*i+1]}}">{{buyer_names[3*i+1]}}</a></li></ul></td>
+      <td><ul><li><a href="\user\{{buyers[3*i+2]}}">{{buyer_names[3*i+2]}}</a></li></ul></td>
+      
+      
+    </tr>
+  {% endfor %}
+</table></center>
+{% endblock %}
+
+{% block content %}
+{% endblock %}
+

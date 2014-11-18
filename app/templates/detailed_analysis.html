@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block scripts %}
+{% endblock %}
+
+{% block timeline %}
+
+<center>
+Buyer Score = {{buyer_score}}
+</center>
+
+<center><table style="width:600px">
+
+
+<tr>
+  <th>Talk</th>
+  <th>Category</th>  
+</tr>
+
+{% for conv,analysis in conv_analysis_list %}
+<tr>
+  <td><hr></td>
+  <td><hr></td>
+</tr>
+<tr>
+  <td><i>{{conv}}</i></td>
+  <td><i>{{analysis}}</i></td>		
+</tr></i>
+
+
+{% endfor %}
+
+</table></center>
+{% endblock %}
+
+
+{% block content %}
+<center><table style="width:700px">
+  <tr>
+    <td><h2><a href='/registered_users'>All Registered Users</a></h2></td>
+    <td><h2>| &nbsp</h2></td>
+    <td><h2><a href='/registered_users/buyers'>Buyers</a></h2></td>
+    <td><h2>| &nbsp</h2></td>
+    <td><h2><a href='/evm'>Event Value Mappings </a></h2></td>
+    <td><h2>| &nbsp</h2></td>
+    <td><h2><a href='/about'>About</a></h2></td>
+  </tr>
+</table></center>  
+{% endblock %}

@@ -1,0 +1,195 @@
+ALV Hide,0.0,2.0
+ALV Scroll,0.0,2.0
+ALV Show,0.0,2.0
+Added to Compare,0.42,1.58
+Auto Search,0.16,1.84
+Back Clicked,0.0,2.0
+Back to City,0.0,2.0
+Breadcrumb Clicked,0.0,2.0
+Button Clicked,0.0,2.0
+Button Search,0.204,1.796
+Cancel Clicked,0.2,1.8
+Changed Phone Number,0.0,2.0
+Circle Dragged,0.0,2.0
+Circle Radius Changed,0.0,2.0
+Clicked Call,0.108,1.892
+Clicked Contact,0.0,2.0
+Clicked Floor Plan,0.108,1.892
+Clicked Footer Links,0.094,1.906
+Clicked Less Properties,0.19,1.81
+Clicked Listing,0.29,1.71
+Clicked More Properties,0.302,1.698
+Clicked Pagination,0.216,1.784
+Clicked Photo Pagination,0.044,1.956
+Clicked Portfolio Tracker,0.0,2.0
+Clicked Read More,0.104,1.896
+Clicked SMS,0.334,1.666
+Clicked Zoom,0.168,1.832
+Collapse Properties,0.0,2.0
+Compared,0.16,1.84
+Discussion Read,0.0,2.0
+Discussion Submitted,0.25,1.75
+Done Clicked,0.0,2.0
+Enquiry Errors,0.92,1.08
+Enquiry Initiated,1.432,0.568
+Enquiry Opened,0.534,1.466
+Enquiry Submitted,2.0,0.0
+Expand Properties,0.3,1.7
+Explore Box,0.0,2.0
+Explore PT Maps Clicked,0.0,2.0
+Explore dropdown,0.168,1.832
+Favorite Added,0.858,1.142
+Favorite Attempt,0.6,1.4
+Favorite Removed,0.2,1.8
+Filter Reset,0.0,2.0
+Filter Used,0.25,1.75
+Floor Plan Viewed,0.192,1.808
+GOTO Link Clicked,0.0,2.0
+Gallery Close,0.0,2.0
+Gallery Open,0.0,2.0
+Gallery Photos Zoomed,0.0,2.0
+Gallery Zoom Reset,0.0,2.0
+Go to Project,0.0,2.0
+Graph Viewed,0.0,2.0
+Header Clicked,0.0,2.0
+Header Dropdown,0.212,1.788
+Home Loan Request,2.0,0.0
+Left Sidebar Clicked,0.0,2.0
+Link Clicked,0.0,2.0
+Locality Clicked,0.0,2.0
+Locality Detail Clicked,0.2,1.8
+Locality Neighbouhood Clicked,0.2,1.8
+Locality Rating Box Open,0.222,1.778
+Locality Rating Submitted,0.0,2.0
+Locality Review Box Open,0.0,2.0
+Locality Review Clicked,0.0,2.0
+Locality Review Submitted,0.0,2.0
+Logo Clicked,0.0,2.0
+Map Zoom In,0.0,2.0
+Map Zoom Out,0.0,2.0
+MapV2 Clicked,0.09,1.91
+Mapped Project,0.0,2.0
+Message Clicked No,0.0,2.0
+Message Clicked OK,0.0,2.0
+Message Clicked Yes,0.0,2.0
+Message Displayed,0.0,2.0
+Mobile App Clicked,0.0,2.0
+Mobile Cluster Clicked,0.0,2.0
+Modify Search - Locality Selected,0.0,2.0
+Modify Search Cancelled,0.0,2.0
+Modify Search Clicked,0.08,1.92
+Next Clicked,0.0,2.0
+Next Page Viewed,0.0,2.0
+Page Viewed,0.15,1.85
+Panel Clicked,0.0,2.0
+Panel Open,0.288,1.712
+Photo Carousel Viewed,0.142,1.858
+Photo Gallery Viewed,0.19,1.81
+Photo Tab Clicked,0.054,1.946
+Photo Viewed Zoom,0.182,1.818
+Project Clicked,0.0,2.0
+Project Connectivity Clicked,0.0,2.0
+Project Detail Clicked,0.0,2.0
+Project Floor Plan Viewed,0.0,2.0
+Project Map View Clicked,0.0,2.0
+Project Neighborhood Clicked,0.0,2.0
+Project Neighbourhood Clicked,0.0,2.0
+Project Photos Viewed,0.0,2.0
+Project Review Clicked,0.0,2.0
+Project undefined Clicked,0.0,2.0
+Property Clicked,0.0,2.0
+Property deleted,0.0,2.0
+Registration Errors,0.466,1.534
+Registration Initiated,0.33,1.67
+Registration Successful,0.316,1.684
+Removed from Compare,0.0,2.0
+Report Error Submitted,0.0,2.0
+Save Search Attempt,0.4,1.6
+Save Search Saved,0.0,2.0
+Search - Bedroom Selected,0.066,1.934
+Search - City Selected,0.046,1.954
+Search - Filtered,0.074,1.926
+Search - Max Budget Selected,0.092,1.908
+Search - Min Budget Selected,0.082,1.918
+Search Initiated,0.192,1.808
+Search on Map Clicked,0.0,2.0
+Sell Property - Step1,0.0,2.0
+Sell Property - Step2,0.0,2.0
+Sell Request,0.0,2.0
+Share,0.2,1.8
+Sidebar Clicked,0.0,2.0
+SignIn Errors,0.24,1.76
+SignIn Initiated,0.302,1.698
+SignIn Successful,0.0,2.0
+Site Visited,0.0,2.0
+Social Links,0.0,2.0
+Sort Type Change,0.356,1.644
+Start Discussions Clicked,0.182,1.818
+Step 1 - Add Property,0.0,2.0
+Step 1 - Edit Property,0.0,2.0
+Step 2 - Project Selected,0.0,2.0
+Step 2 - Updated Property Details,0.0,2.0
+Step 3 - Property Details,0.0,2.0
+Step 3 - Property Updated,0.0,2.0
+Step 4 - Property Added,0.0,2.0
+Tab Clicked,0.0,2.0
+Unmapped Project,0.0,2.0
+Video End,0.0,2.0
+Video Paused,0.0,2.0
+Video Play,0.0,2.0
+Video Played,0.0,2.0
+Video Start,0.0,2.0
+Video Viewed,0.0,2.0
+View Payment Plan,0.0,2.0
+View Type Change,0.0,2.0
+Viewed Help Screen,0.0,2.0
+Viewed Overview Screen,0.0,2.0
+Viewed Register Form,0.296,1.704
+Viewed Report Error Form,0.0,2.0
+Viewed Sell Property Form,0.0,2.0
+Viewed Sign In Form,0.34,1.66
+Widget Clicked,0.216,1.784
+header dropdown,0.0,2.0
+Search - City Selected,0.046,1.954
+Search - Filtered,0.074,1.926
+Search - Max Budget Selected,0.092,1.908
+Search - Min Budget Selected,0.082,1.918
+Search Initiated,0.192,1.808
+Search on Map Clicked,0.0,2.0
+Sell Property - Step1,0.0,2.0
+Sell Property - Step2,0.0,2.0
+Sell Request,0.0,2.0
+Share,0.2,1.8
+Sidebar Clicked,0.0,2.0
+SignIn Errors,0.24,1.76
+SignIn Initiated,0.302,1.698
+SignIn Successful,0.0,2.0
+Site Visited,0.0,2.0
+Social Links,0.0,2.0
+Sort Type Change,0.356,1.644
+Start Discussions Clicked,0.182,1.818
+Step 1 - Add Property,0.0,2.0
+Step 1 - Edit Property,0.0,2.0
+Step 2 - Project Selected,0.0,2.0
+Step 2 - Updated Property Details,0.0,2.0
+Step 3 - Property Details,0.0,2.0
+Step 3 - Property Updated,0.0,2.0
+Step 4 - Property Added,0.0,2.0
+Tab Clicked,0.0,2.0
+Unmapped Project,0.0,2.0
+Video End,0.0,2.0
+Video Paused,0.0,2.0
+Video Play,0.0,2.0
+Video Played,0.0,2.0
+Video Start,0.0,2.0
+Video Viewed,0.0,2.0
+View Payment Plan,0.0,2.0
+View Type Change,0.0,2.0
+Viewed Help Screen,0.0,2.0
+Viewed Overview Screen,0.0,2.0
+Viewed Register Form,0.296,1.704
+Viewed Report Error Form,0.0,2.0
+Viewed Sell Property Form,0.0,2.0
+Viewed Sign In Form,0.34,1.66
+Widget Clicked,0.216,1.784
+header dropdown,0.0,2.0

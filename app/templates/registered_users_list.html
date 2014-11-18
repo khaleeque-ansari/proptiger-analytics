@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block scripts %}
+{% endblock %}
+
+{% block timeline %}
+  {% for user in users %}
+    {{user['name']}}
+  {% endfor %}
+  
+    
+  
+  
+  <center><table>
+  {% for i in range(25) %}
+    <tr>
+      {% if 3*i < users_len %}      
+      <td><ul><li><a href="\user\{{users[3*i+0][0]}}">{{users[3*i+0][1]}}</a></li></ul></td>
+      {% endif %}
+      {% if 3*i+1 < users_len %}
+      <td><ul><li><a href="\user\{{users[3*i+1][0]}}">{{users[3*i+1][1]}}</a></li></ul></td>
+      {% endif %}
+      {% if 3*i+2 < users_len %}
+      <td><ul><li><a href="\user\{{users[3*i+2][0]}}">{{users[3*i+2][1]}}</a></li></ul></td>
+      {% endif %}
+    </tr>
+  {% endfor %}
+  </table></center>
+
+  
+  {% if pages!=1 %}
+  <center><table>
+
+  <tr>
+    {% for i in range(1,pages+1) %}
+    <td><a href="\registered_users\{{alph}}\{{i}}">{{i}}</a></td>      
+    {% endfor %}
+  </tr>
+  </table></center>
+  {% endif %}
+  
+{% endblock %}
+
+{% block content %}
+{% endblock %}
+

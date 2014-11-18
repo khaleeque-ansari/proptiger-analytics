@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block scripts %}
+{% endblock %}
+
+{% block timeline %}
+
+<h3>  
+    <i>
+      Aim
+    </i>
+</h3>
+
+<p>
+    <i>
+      We are combining user's online as well as offline activity to judge how serious he/she is about buying the property. Further we will try to use this information to keep him engaged.
+    </i>
+</p>
+
+<h3>  
+    <i>
+      Assumptions
+    </i>
+</h3>
+<p>
+    <i> 
+      <ul>
+	<li>
+	  on registered users page assumption no of pages is less than 100.
+	</li>
+	<li>
+	  Assumption names of users start from a valid alphabet(a-z,A-z)
+	</li>
+	<li>
+	  Product user will not modify the url while viewing registered users. As directly querying database for params from url. No check done.
+	</li>
+      </ul>     
+    </i>  
+</p>
+
+
+<h3>  
+    <i>
+      Remaining Work
+    </i>
+</h3>
+<p>
+    <i> 
+      <ul>
+	<li>
+	  Add a cron which updates database from mySQL ptigercrm and fetches from mixpanel server.
+	</li>
+	<li>
+	  After property booking what happens.
+	</li>	
+      </ul>     
+    </i>  
+</p>
+
+
+
+{% endblock %}
+
+{% block content %}
+{% endblock %}
